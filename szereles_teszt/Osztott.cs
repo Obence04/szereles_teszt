@@ -15,6 +15,9 @@ namespace szereles_teszt
         public Osztott()
         {
             InitializeComponent();
+            felszereles.Clear();
+            Kod.Clear();
+            lista.Clear();
             Olvas_felsz("felszerelesek.csv");
             KerdesGeneralas();
             #region felszerelés kódtábla
@@ -127,9 +130,6 @@ namespace szereles_teszt
 
         private void Osztott_FormClosing(object sender, FormClosingEventArgs e)
         {
-            felszereles.Clear();
-            Kod.Clear();
-            lista.Clear();
         }
 
         private void Torol(object sender, EventArgs e)
