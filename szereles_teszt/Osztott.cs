@@ -18,7 +18,7 @@ namespace szereles_teszt
             felszereles.Clear();
             Kod.Clear();
             lista.Clear();
-            Olvas_felsz("felszerelesek.csv");
+            Olvas_felsz(@"..\..\..\files\felszerelesek.csv");
             KerdesGeneralas();
             #region felszerelés kódtábla
             Kod.Add('B', "B tömlő");
@@ -77,7 +77,7 @@ namespace szereles_teszt
         }
         private static void Olvas_felsz(string fajlnev)
         {
-            using FileStream fs = new(@"..\..\..\files\" + fajlnev, FileMode.Open);
+            using FileStream fs = new(fajlnev, FileMode.Open);
             using StreamReader sr = new(fs, Encoding.UTF8);
             while (!sr.EndOfStream)
             {
