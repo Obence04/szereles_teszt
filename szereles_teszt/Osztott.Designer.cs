@@ -158,6 +158,7 @@
             this.Controls.Add(this.LB_Kerdes);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Osztott";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Osztott sugár szerelése";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Osztott_FormClosing);
             this.ResumeLayout(false);
