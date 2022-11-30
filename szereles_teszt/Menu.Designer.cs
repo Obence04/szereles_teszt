@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.BTN_OS = new System.Windows.Forms.Button();
+            this.BTN_Nevjegy = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BTN_OS
@@ -42,6 +43,16 @@
             this.BTN_OS.UseVisualStyleBackColor = true;
             this.BTN_OS.Click += new System.EventHandler(this.BTN_OS_Click);
             // 
+            // BTN_Nevjegy
+            // 
+            this.BTN_Nevjegy.Location = new System.Drawing.Point(183, 197);
+            this.BTN_Nevjegy.Name = "BTN_Nevjegy";
+            this.BTN_Nevjegy.Size = new System.Drawing.Size(75, 23);
+            this.BTN_Nevjegy.TabIndex = 1;
+            this.BTN_Nevjegy.Text = "Névjegy";
+            this.BTN_Nevjegy.UseVisualStyleBackColor = true;
+            this.BTN_Nevjegy.Click += new System.EventHandler(this.BTN_Nevjegy_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -50,6 +61,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(270, 232);
+            this.Controls.Add(this.BTN_Nevjegy);
             this.Controls.Add(this.BTN_OS);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -63,5 +75,6 @@
 
         #endregion
         private Button BTN_OS;
+        private Button BTN_Nevjegy;
     }
 }

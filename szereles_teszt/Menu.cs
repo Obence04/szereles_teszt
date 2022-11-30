@@ -12,5 +12,11 @@ namespace szereles_teszt
             Osztott form = new();
             form.Show();
         }
+
+        private void BTN_Nevjegy_Click(object sender, EventArgs e)
+        {
+            Nevjegy form = new();
+            form.Show();
+        }
     }
 }
